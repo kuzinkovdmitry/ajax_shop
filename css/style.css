@@ -1,0 +1,297 @@
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url(/fonts/Ubuntu-Regular.ttf); }
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url(/fonts/Ubuntu-Light.ttf); }
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url(/fonts/Ubuntu-Medium.ttf); }
+@font-face {
+  font-family: Myrad-Pro-Regular;
+  src: url(/fonts/MyriadPro-Regular.ttf); }
+body {
+  background: #efeeee !important; }
+
+.first_row {
+  height: 90%;
+  background-color: white;
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 35px; }
+
+.fadeIn {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.first {
+  margin: auto;
+  max-width: 1100px; }
+  .first .col-md-4 {
+    height: 500px;
+    width: 225px !important;
+    margin-left: 25px;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+    border: 1px solid #d9d9d9; }
+    .first .col-md-4:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .first .col-md-4 .img_block {
+      position: relative; }
+      .first .col-md-4 .img_block .sale_block {
+        position: absolute;
+        top: 110px;
+        color: white;
+        font-family: Ubuntu-Medium;
+        height: 35px;
+        width: 70px;
+        vertical-align: middle;
+        line-height: 35px;
+        left: 0;
+        background-color: red;
+        display: none; }
+      .first .col-md-4 .img_block .new_block {
+        position: absolute;
+        top: 110px;
+        color: white;
+        font-family: Ubuntu-Medium;
+        height: 35px;
+        width: 70px;
+        vertical-align: middle;
+        line-height: 35px;
+        right: 0;
+        background-color: black;
+        display: none; }
+      .first .col-md-4 .img_block img {
+        max-width: 100%;
+        max-height: 67%; }
+      .first .col-md-4 .img_block #children {
+        margin-top: 20px;
+        padding-bottom: 20px; }
+    .first .col-md-4 h4 {
+      position: absolute;
+      top: 260px;
+      font-family: Ubuntu-Regular;
+      font-size: 11pt;
+      font-weight: 600; }
+    .first .col-md-4 p {
+      position: absolute;
+      top: 300px;
+      font-family: Ubuntu-Light;
+      text-align: left;
+      font-size: 9pt;
+      color: #a6a6a6; }
+    .first .col-md-4 .cost_block {
+      position: absolute;
+      top: 378px; }
+    .first .col-md-4 h3 {
+      font-family: Ubuntu-Regular;
+      font-size: 20pt;
+      font-weight: 500;
+      text-align: left;
+      display: inline; }
+    .first .col-md-4 .old_price {
+      color: #e60000;
+      font-size: 14.5pt;
+      text-decoration: line-through;
+      margin-left: 25px;
+      display: inline;
+      font-family: Ubuntu-Regular; }
+    .first .col-md-4 .div_but {
+      position: absolute;
+      top: 420px;
+      margin: auto;
+      left: -9px; }
+      .first .col-md-4 .div_but a {
+        text-decoration: none;
+        font-size: 8.5pt;
+        width: 98px;
+        height: 45px;
+        padding: 6px 22px;
+        border-color: #2e6da4;
+        border: 1px solid transparent;
+        display: inline-flex; }
+      .first .col-md-4 .div_but #first_but {
+        font-family: Ubuntu-Medium;
+        background-color: white;
+        color: #e60000;
+        font-weight: bold;
+        border: 1px solid transparent;
+        border-color: #e6e6e6;
+        margin-left: 18px;
+        position: relative;
+        top: -10px; }
+      .first .col-md-4 .div_but #first_but:hover {
+        background-color: #ea7b7b;
+        color: #e60000; }
+      .first .col-md-4 .div_but #second_but {
+        font-family: Ubuntu-Light;
+        background-color: #cccccc;
+        color: #999999;
+        border: 1px solid transparent;
+        border-color: #e6e6e6;
+        margin-left: 9px;
+        padding-left: 33px;
+        position: relative;
+        top: 9px; }
+        .first .col-md-4 .div_but #second_but #second_but_view {
+          margin-top: 5px;
+          position: absolute; }
+      .first .col-md-4 .div_but #second_but:hover {
+        background-color: #d9d9d9;
+        color: #a6a6a6; }
+
+#second_line {
+  margin-top: -50px; }
+
+.second {
+  margin: auto;
+  max-width: 1100px; }
+
+.third_row {
+  height: 160px;
+  background-color: white;
+  margin: auto;
+  max-width: 1170px;
+  padding-left: 35px; }
+  .third_row #load_more {
+    text-decoration: none;
+    font-size: 15pt;
+    width: 175px;
+    height: 48px;
+    padding: 10px 22px;
+    display: block;
+    font-family: Myrad-Pro-Regular;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    color: #e60000;
+    border: 1px solid transparent;
+    border-color: #e6e6e6;
+    margin-top: 55px;
+    cursor: pointer; }
+  .third_row #load_more:hover {
+    background-color: #ea7b7b;
+    color: #e60000; }
+
+.fourth_row {
+  height: 100%;
+  background-color: white;
+  margin: auto;
+  max-width: 1170px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .fourth_row .col-md-4 {
+    border: 1px solid #d9d9d9;
+    width: 31%;
+    margin-left: 2%;
+    padding-left: 17px;
+    padding-top: 25px; }
+    .fourth_row .col-md-4 h1 {
+      font-family: Myrad-Pro-Regular;
+      font-size: 18pt;
+      padding-bottom: 10px; }
+    .fourth_row .col-md-4 p {
+      font-size: 10pt;
+      font-family: Myrad-Pro-Regular;
+      color: #999999; }
+    .fourth_row .col-md-4 ul {
+      padding-left: 17px; }
+      .fourth_row .col-md-4 ul li {
+        list-style: none;
+        position: relative;
+        color: red;
+        padding-bottom: 5px;
+        font-size: 10pt;
+        font-family: Myrad-Pro-Regular;
+        color: #999999; }
+        .fourth_row .col-md-4 ul li:before {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: 4px;
+          left: -15px;
+          border-style: solid;
+          border-width: 5px 0 5px 7px;
+          border-color: transparent transparent transparent #ff0000; }
+    .fourth_row .col-md-4 .contacts {
+      margin-bottom: 20px; }
+    .fourth_row .col-md-4 .fa-phone {
+      transform: rotate(90deg); }
+    .fourth_row .col-md-4 i {
+      color: #e60000;
+      font-size: 25pt; }
+    .fourth_row .col-md-4 #fa-text {
+      margin-left: 5px;
+      position: absolute;
+      margin-top: 7px; }
+
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  display: none;
+  background: #fff;
+  opacity: 0.8; }
+
+.page-loader-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border-radius: 50%;
+  border: 2px solid;
+  border-top-color: #222222;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  border-left-color: #222222;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  -webkit-animation: page-loader-circle 0.8s linear infinite;
+  animation: page-loader-circle 0.8s linear infinite; }
+
+@keyframes page-loader-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes page-loader-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=style.css.map */

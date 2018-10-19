@@ -1,0 +1,27 @@
+@media screen and (max-width: 991px) {
+    .first_row{
+        padding-left: 110px !important;
+    }
+    
+    .fourth_row{
+        padding-bottom: 40px;
+    }
+    
+    .fourth_row .col-md-4{
+        width: 65%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1079px) {
+    .first_row{
+        padding-left: 95px !important;
+    }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1199px) {
+    .first_row{
+        padding-left: 95px !important;
+    }
+}

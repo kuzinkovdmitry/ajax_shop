@@ -1,0 +1,397 @@
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(/fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(/fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url(/fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: Myrad-Pro-Regular;
+    src: url(/fonts/MyriadPro-Regular.ttf);
+}
+
+body {
+    background: #efeeee !important;
+}
+
+.container{
+
+}
+
+.first_row{
+    height: 90%;
+    background-color: white;
+    max-width: 1170px;
+    margin: auto;
+    padding-left: 35px;
+//    padding-right: 20px;
+}
+
+.fadeIn{
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+    
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+         
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.first{
+    margin: auto;
+    max-width: 1100px;
+    
+    .col-md-4{
+        height: 500px;
+        width: 225px !important;
+        margin-left: 25px;
+        margin-top: 40px;
+        text-align: center;
+        padding-top: 15px;
+        position: relative;
+        border: 1px solid #d9d9d9;
+        
+        &:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
+        .img_block{
+            position: relative;
+            
+            @mixin sale_new{
+                position: absolute;
+                top: 110px;
+                color: white;
+                font-family: Ubuntu-Medium;
+                height: 35px;
+                width: 70px;
+                vertical-align: middle;
+                line-height: 35px;
+            }
+            
+            .sale_block{
+                @include sale_new;
+                left: 0;
+                background-color: red;
+                display: none;
+
+            }
+            
+            .new_block{
+                @include sale_new;
+                right: 0;
+                background-color: black;
+                display: none;
+            }
+            
+            img{
+                max-width: 100%;
+                max-height: 67%;
+            }
+
+            #children{
+                margin-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        
+        h4{
+            position: absolute;
+            top: 260px;
+            font-family: Ubuntu-Regular;
+            font-size: 11pt;
+            font-weight: 600;
+        }
+        
+        p{
+            position: absolute;
+            top: 300px;
+            font-family: Ubuntu-Light;
+            text-align: left;
+            font-size: 9pt;
+            color: #a6a6a6;
+        }
+        
+        .cost_block{
+            position: absolute;
+            top: 378px;
+        }
+        
+        h3{
+            font-family: Ubuntu-Regular;
+            font-size: 20pt;
+            font-weight: 500;
+            text-align: left; 
+            display: inline;
+        }
+        
+        .old_price{
+            color: #e60000;
+            font-size: 14.5pt;
+            text-decoration: line-through;
+            margin-left: 25px;
+            display: inline;
+            font-family: Ubuntu-Regular;
+        }
+        
+        .div_but{
+            position: absolute;
+            top: 420px;
+            margin: auto;
+            left: -9px;
+            
+            a{
+                text-decoration: none;
+                font-size: 8.5pt;
+                width: 98px;
+                height: 45px;
+                padding: 6px 22px;
+                border-color: #2e6da4;
+                border: 1px solid transparent;
+                display: inline-flex;
+            }
+            
+            #first_but{
+                font-family: Ubuntu-Medium;
+                background-color: white;
+                color: #e60000;
+                font-weight: bold;
+                border: 1px solid transparent;
+                border-color: #e6e6e6;
+                margin-left: 18px;
+                position: relative;
+                top: -10px;
+            }
+            
+            #first_but:hover{
+                background-color: #ea7b7b;
+                color: #e60000;
+            }
+            
+            #second_but{
+                font-family: Ubuntu-Light;
+                background-color: #cccccc;
+                color: #999999;
+                border: 1px solid transparent;
+                border-color: #e6e6e6;
+                margin-left: 9px;
+                padding-left: 33px;
+                position: relative;
+                top: 9px;
+                #second_but_view{
+                    margin-top: 5px;
+                    position: absolute;
+                }
+            }
+            
+            #second_but:hover{
+                background-color: #d9d9d9;
+                color: #a6a6a6;
+            }
+        }
+
+    }
+}
+
+#second_line{
+    margin-top: -50px;
+}
+
+.second{
+    margin: auto;
+    max-width: 1100px;
+}
+
+.third_row{
+    height: 160px;
+    background-color: white;
+    margin: auto;
+    max-width: 1170px;
+    padding-left: 35px;
+    
+    #load_more{
+        text-decoration: none;
+        font-size: 15pt;
+        width: 175px;
+        height: 48px;
+        padding: 10px 22px;
+        display: block;
+        font-family: Myrad-Pro-Regular;
+        margin: auto;
+        text-align: center;
+        background-color: white;
+        color: #e60000;
+        border: 1px solid transparent;
+        border-color: #e6e6e6;
+        margin-top: 55px;
+        cursor: pointer;
+    }
+    
+    #load_more:hover{
+        background-color: #ea7b7b;
+        color: #e60000;
+    }
+}
+
+.fourth_row{
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    max-width: 1170px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+ 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    
+    .col-md-4{
+        border: 1px solid #d9d9d9;
+        width: 31%;
+        margin-left: 2%;
+        padding-left: 17px;
+        padding-top: 25px;
+        
+        h1{
+            font-family: Myrad-Pro-Regular;
+            font-size: 18pt;
+            padding-bottom: 10px;
+        }
+        
+        p{
+            font-size: 10pt;
+            font-family: Myrad-Pro-Regular;
+            color: #999999;
+        }
+        
+        ul{
+            padding-left: 17px;
+            
+            li{
+                list-style: none;
+                position: relative;
+                color: red;
+                padding-bottom: 5px;
+                font-size: 10pt;
+                font-family: Myrad-Pro-Regular;
+                color: #999999;
+                &:before{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: 4px;
+                    left: -15px;
+                    border-style: solid;
+                    border-width: 5px 0 5px 7px;
+                    border-color: transparent transparent transparent #ff0000;
+                }
+            }
+        } 
+        
+        .contacts{
+            margin-bottom: 20px;
+        }
+        
+        .fa-phone{
+           transform: rotate(90deg) 
+        }
+        
+        i{
+            color: #e60000;
+            font-size: 25pt;
+        }
+        
+        #fa-text{
+            margin-left: 5px;
+            position: absolute;
+            margin-top: 7px;
+        }
+    }
+//    .col-md-4:last-child{
+//        padding-bottom: 38px;
+//    }
+}
+
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    display: none;
+    background: #fff;
+    opacity: 0.8;
+}
+
+.page-loader-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0 -18px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-top-color: rgba(34, 34, 34, 1);
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-left-color: rgba(34, 34, 34, 1);
+    border-right-color: rgba(0, 0, 0, 0.15);
+    -webkit-animation: page-loader-circle 0.8s linear infinite;
+    animation: page-loader-circle 0.8s linear infinite;
+}
+
+@keyframes page-loader-circle {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes page-loader-circle {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
